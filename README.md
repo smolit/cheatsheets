@@ -1,4 +1,13 @@
 # cheatsheets
 My personal job cheat sheets
 
-[a relative link](sheets/docker-cheat-sheet.md)
+### Cheat Sheets
+[Docker](sheets/docker-cheat-sheet.md)
+
+[Helm](sheets/helm-cheat-sheet.md)
+
+[Kubectl](sheets/kubectl-cheat-sheet.md)
+
+[Linuxl](sheets/linux-cheat-sheet.md)
+
+[Terraforml](sheets/terraform-cheat-sheet.md)
