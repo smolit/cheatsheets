@@ -6,8 +6,8 @@ My personal job cheat sheets
 
 [Helm](sheets/helm-cheat-sheet.md)
 
-[Kubectl](sheets/kubectl-cheat-sheet.md)
+[Kubect](sheets/kubectl-cheat-sheet.md)
 
-[Linuxl](sheets/linux-cheat-sheet.md)
+[Linux](sheets/linux-cheat-sheet.md)
 
 [Terraform](sheets/terraform-cheat-sheet.md)
