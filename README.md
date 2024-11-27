@@ -10,4 +10,4 @@ My personal job cheat sheets
 
 [Linuxl](sheets/linux-cheat-sheet.md)
 
-[Terraforml](sheets/terraform-cheat-sheet.md)
+[Terraform](sheets/terraform-cheat-sheet.md)
