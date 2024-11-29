@@ -1,10 +1,15 @@
-Destroy Specific Resources
+#####Destroy Specific Resources
 
 terraform plan -destroy -target="module.<submodule>.<resourcetype>.<resourcename>"
 
 terraform destroy -target="module.<submodule>.<resourcetype>.<resourcename>"
 
-Forcing Re-creation of Resources
+##### Import State of Resources
+
+terraform import aws_iam_role.role_name my_role
+
+
+#####Forcing Re-creation of Resources
 
   terraform apply -replace="aws_instance.example"
   
