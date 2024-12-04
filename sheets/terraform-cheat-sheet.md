@@ -8,7 +8,17 @@
 
 ### Import State of Resources
 
+Resource Import
+
     terraform import aws_iam_role.role_name my_role
+
+Module Import
+
+    terraform import module.iam.aws_iam_user.user bill
+
+Module Import for_each
+
+    terraform import module.iam.aws_iam_user.user[\"bill\"] bill    
 
 ### Remove State of Resources
 
