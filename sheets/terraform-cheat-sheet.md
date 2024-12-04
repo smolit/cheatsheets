@@ -1,19 +1,28 @@
-#####Destroy Specific Resources
+# Terraform Cheat Sheet
 
-terraform plan -destroy -target="module.<submodule>.<resourcetype>.<resourcename>"
+### Destroy Specific Resources
 
-terraform destroy -target="module.<submodule>.<resourcetype>.<resourcename>"
+    terraform plan -destroy -target="module.<submodule>.<resourcetype>.<resourcename>"
 
-##### Import State of Resources
+    terraform destroy -target="module.<submodule>.<resourcetype>.<resourcename>"
 
-terraform import aws_iam_role.role_name my_role
+### Import State of Resources
+
+    terraform import aws_iam_role.role_name my_role
+
+### Remove State of Resources
+
+States created in a module with a for each loop
+
+    tf state rm 'module.peering.azurerm_virtual_network_peering.peer_vns["peering-name"]'
 
 
-#####Forcing Re-creation of Resources
+### Forcing Re-creation of Resources
 
-  terraform apply -replace="aws_instance.example"
-  
-# Links
+    terraform apply -replace="aws_instance.example"
+
+
+## Links
 
 https://www.hashicorp.com/blog/terraform-azurerm-provider-4-0-adds-provider-defined-functions
   
