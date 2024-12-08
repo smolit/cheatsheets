@@ -1,5 +1,7 @@
 # Kubectl Cheat Sheet
 
+[K8s snippets](snippets/k8s)
+
 #### Get Eventstream of namespace
   `kubectl get events -w -n <namespace>`
 
