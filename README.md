@@ -6,7 +6,7 @@ My personal job cheat sheets
 
 [Helm](sheets/helm-cheat-sheet.md)
 
-[Kubect](sheets/kubectl-cheat-sheet.md)
+[Kubectl](sheets/kubectl-cheat-sheet.md)
 
 [Linux](sheets/linux-cheat-sheet.md)
 
