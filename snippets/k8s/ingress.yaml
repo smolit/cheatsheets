@@ -1,0 +1,47 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress # Name of the ingress object
+  namespace: namespace # Name of the namespace
+spec:
+  ingressClassName: nginx # Name of the ingress class
+  rules:
+  - host: "your-hostname.com"  # Your hostname
+    http:
+      paths:
+      # Path-based routing settings:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: your-service-name  # The name of the service
+            port:
+              number: 80  # Service Portnumber
+...
+
+# Ingress with cert-manager
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress # Name of the ingress object
+  namespace: namespace # Name of the namespace
+  annotations:
+    cert-manager.io/cluster-issuer: your-issuer # Name of the issuer
+spec:
+  ingressClassName: nginx # Name of the ingress class
+  rules:
+  - host: your-hostname.com  # Your hostname
+    http:
+      paths:
+      # Path-based routing settings:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: your-service-name  # The name of the service
+            port:
+              number: 80  # Service Portnumber
+  tls:
+    - hosts:
+      - your-hostname.com # Your hostname
+      secretName: helloworld-http-tls # any secret name
