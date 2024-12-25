@@ -40,6 +40,10 @@ States created in a module with a for each loop
     terraform plan -var="instance_type=t2.large"
 
     TF_VAR_instance_type="t2.small" terraform plan
+
+#### Variable Loading Precedence
+An interesting thing to ponder is the precedence of the various methods of providing variable values.
+Variable loading precedence
     
 
 
