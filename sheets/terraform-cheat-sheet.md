@@ -44,7 +44,7 @@ States created in a module with a for each loop
 #### Variable Loading Precedence
 An interesting thing to ponder is the precedence of the various methods of providing variable values.
 Variable loading precedence
-    
+![alt text]()
 
 
 ## Links
