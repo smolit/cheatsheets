@@ -31,6 +31,17 @@ States created in a module with a for each loop
 
     terraform apply -replace="aws_instance.example"
 
+### Define Variables
+
+#### CLI
+
+    terraform plan -var-file=”prod.tfvars”
+
+    terraform plan -var="instance_type=t2.large"
+
+    TF_VAR_instance_type="t2.small" terraform plan
+    
+
 
 ## Links
 
