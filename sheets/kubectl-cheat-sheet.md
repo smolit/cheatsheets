@@ -58,7 +58,13 @@
     nodeSelector:
       storage: ssd
   ```
-  
+
+  kubectl create secret docker-registry <secret-name> \
+      --namespace <namespace> \
+      --docker-server=<ACR URL> \
+      --docker-username=<SP APP ID> \
+      --docker-password=<SP SECRET>
+    
 ## Troubleshooting
 - stern (https://github.com/stern/stern)
 
