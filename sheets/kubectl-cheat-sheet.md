@@ -58,6 +58,7 @@
     nodeSelector:
       storage: ssd
   ```
+### Create Docker Registry Secret
 
   kubectl create secret docker-registry <secret-name> \
       --namespace <namespace> \
